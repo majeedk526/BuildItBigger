@@ -24,7 +24,7 @@ android {
         }
 
         paid {
-            applicationId "com.udacity.gradle.builditbigger.paid"
+            applicationId "com.udacity.gradle.builditbigger.main"
         }
     }
 
