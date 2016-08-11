@@ -6,10 +6,11 @@ android {
 
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
-        minSdkVersion 15
+        minSdkVersion 18
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -24,7 +25,7 @@ android {
         }
 
         paid {
-            applicationId "com.udacity.gradle.builditbigger.main"
+            applicationId "com.udacity.gradle.builditbigger.paid"
         }
     }
 
@@ -38,5 +39,5 @@ dependencies {
     compile project(':javajokelib')
     compile project(':andjokelib')
     compile 'com.android.support:appcompat-v7:24.1.1'
-    compile 'com.google.android.gms:play-services:9.4.0'
+    freeCompile 'com.google.android.gms:play-services:9.4.0'
     compile project(path: ':jokebackend', configuration: 'android-endpoints')}
