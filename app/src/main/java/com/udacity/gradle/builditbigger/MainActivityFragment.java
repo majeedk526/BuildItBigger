@@ -50,11 +50,7 @@ public class MainActivityFragment extends Fragment implements View.OnClickListen
         switch(v.getId()){
 
             case R.id.btn_tell_joke:
-                String joke = new Joke().getJoke();
-                Toast.makeText(v.getContext(), joke, Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(getContext(), JokeActivity.class);
-                intent.putExtra("joke",joke);
-                startActivity(intent);
+
                 break;
 
         }
